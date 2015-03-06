@@ -1,7 +1,7 @@
 <html>
 <head>
   <title>Address Book</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css'>
 </head>
 <body>
   <div class='container'>
@@ -33,9 +33,12 @@
         <input id='address' name='address' type='text'>
       </p>
 
-      <p><button type='submit' class='btn-success'>Add Contact</button></p>
+      <p>
+        <button type='submit' class="btn-success">Add Contact</button>
+      </p>
     </form>
-    <form action='/delete_contacts' method='post'>
+    
+    <form action='/delete_contact' method='post'>
       <button type='submit'>Delete All Contacts</button>
     </form>
 

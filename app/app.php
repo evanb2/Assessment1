@@ -18,13 +18,13 @@
 
   $app->post("/create_contact", function() use ($app) {
     $contact = new Contact($_POST['name'], $_POST['number'], $_POST['address']);
-    $contact ->save();
+    $contact->save();
     return $app['twig']->render('create_contact.twig', array('newcontact' => $contact));
   });
 
-  $app->post("/delete_contacts", function() use ($app) {
+  $app->post("/delete_contact", function() use ($app) {
     Contact::deleteAll();
-    return $app['twig']->render('delete_contacts.twig');
+    return $app['twig']->render('delete_contact.twig');
   });
 
   return $app;
